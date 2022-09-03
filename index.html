@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="color-switcher">
+        <span class="btn" id="white" onclick="changeBG('#ffffff')"></span>
+        <span class="btn" id="aqua" onclick="changeBG('#7fffd4')"></span>
+        <span class="btn" id="blue" onclick="changeBG('#0000ff')"></span>
+        <span class="btn" id="yellow" onclick="changeBG('#ffff00')"></span>
+        <span class="btn" id="violet" onclick="changeBG('#ce9aff')"></span>
+        <span class="btn" id="black" onclick="changeBG('#000000')"></span>
+    </div>
+    <h1 class="text">My Grand MAA</h1>
+    <img src="/IMG_3140.JPG" alt="" >
+    <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. At eius consequatur non officiis similique tempore
+        fugiat, ducimus assumenda perferendis, perspiciatis autem atque quisquam placeat, error eveniet necessitatibus
+        ab nam ipsa incidunt veniam amet excepturi et. At quidem ad cupiditate fugiat ea adipisci eum exercitationem
+        dolor accusamus inventore, porro voluptatibus perferendis minus ipsam, modi aperiam suscipit cum beatae
+        obcaecati vel! Nesciunt voluptatum eius, debitis totam iste culpa libero magni nam maiores. Aliquid magni sint
+        quos inventore explicabo suscipit est amet rem odio ad, distinctio, eos optio eum qui ex saepe dignissimos
+        corrupti. Quasi, culpa possimus deleniti temporibus vitae ex iste hic porro nostrum, cupiditate impedit iure cum
+        doloremque molestiae ea quaerat adipisci eveniet voluptas, inventore saepe sunt! Nobis amet, a voluptatibus
+        animi iste quos quidem possimus nulla harum consectetur! Amet ipsam modi vel numquam, expedita quae debitis
+        unde, ipsa ratione exercitationem autem sint animi illum praesentium repellendus magni sequi! Quaerat sunt
+        neque, molestiae accusantium ducimus est consequatur voluptas dolores, magnam itaque qui deleniti omnis? Quis
+        soluta ipsum vel ab architecto placeat beatae itaque, omnis eveniet alias animi quam earum qui, dolorem
+        inventore pariatur esse sequi hic magni temporibus distinctio neque exercitationem sint. Quis sunt sed, fugiat
+        ducimus quaerat hic accusantium beatae nihil animi eos reiciendis nemo omnis ipsam distinctio quisquam unde
+        eaque dicta dolorum fugit suscipit aperiam alias! Eaque eum pariatur maxime, ipsum animi, a inventore quaerat
+        adipisci ipsam in laborum deleniti voluptate libero doloremque, soluta expedita praesentium. Adipisci veritatis
+        beatae reprehenderit magni similique dignissimos. Maxime doloremque, suscipit porro magnam delectus distinctio
+        illum sint unde molestias veritatis quasi atque consequuntur voluptatem ratione quod sequi consequatur et
+        aspernatur quam maiores possimus obcaecati? Reiciendis deserunt natus in. Dolor consequuntur quae quasi ad
+        excepturi! Non provident doloribus impedit repellat voluptate quibusdam neque, nemo pariatur itaque aliquid
+        nulla, similique ipsum hic! Ipsa laudantium dolores esse?</p>
+        <script>
+            function changeBG(color){
+                document.body.style.backgroundColor = color
+                let txt = document.getElementsByClassName('text')
+                if(color == "#000000"){
+                   for(let elm of txt){
+                    elm.style.color = "white"
+                   }
+                   }else{
+                    for(let elm of txt){
+                        elm.style.color = "black"
+                    }
+                }
+            }
+        </script>
+</body>
+
+</html>
